@@ -1,0 +1,1406 @@
+{
+    "cosmicData": [
+        {
+            "cosmicId": "001",
+            "parentCaseId": "CASE001",
+            "businessUnit": "Business Unit 1",
+            "businessUnitLabel": "Label 1",
+            "focusIdentifier": "FI001",
+            "focusName": "Focus Name 1",
+            "createdBy": "User001",
+            "summary": [
+                {
+                    "sharingCategory": "Internal",
+                    "riskType": [
+                        {
+                            "label": "Fraud",
+                            "value": "FRD001"
+                        }
+                    ],
+                    "hasExistingTicket": "Yes",
+                    "existingTicketNumber": "TICKET001",
+                    "internalReferenceNumber": "REF001",
+                    "existingTicketReason": "Suspicious Activity",
+                    "ticketReasonOthers": "None",
+                    "redFlags":[
+{
+"redFlagCode": "C01",
+"redFlagType": "Company Profile",
+"generic": "1",
+"redFlag": "Company profile red flag 01"
+},
+{
+"redFlagCode": "C04",
+"redFlagType": "Company Profile",
+"generic": "1",
+"redFlag": "Company profile red flag 04"
+},
+{
+"redFlagCode": "C11",
+"redFlagType": "Company Profile",
+"generic": "1",
+"redFlag": "Company profile red flag 11"
+}
+],
+                    "sendingBank": {
+                        "label": "Bank 1A",
+                        "value": "BANK001A"
+                    },
+                    "receivingBank": {
+                        "label": "Bank 1B",
+                        "value": "BANK001B"
+                    },
+                    "summaryDescription": "Suspicious transfer involving Bank 1A and Bank 1B",
+                    "rfi": {
+                        "Questions": [
+                            {
+                                "questionText": "Why was the transaction flagged?",
+                                "questionCode": "Q001",
+                                "order": 1
+                            }
+                        ]
+                    }
+                }
+            ],
+            "entityInformation": [
+                {
+                    "rownum": 1,
+                    "category": "Individual",
+                    "includedInAlert": "Yes",
+                    "alertJustification": "High risk flagged",
+                    "countryOfIncorporation": "SG",
+                    "countryOfIncorporationLabel": "Singapore",
+                    "corporateRegistryNumber": "CR001",
+                    "type": "Individual",
+                    "name": "John Doe 1",
+                    "dateofBirthIncorporatedDate": "1980-01-01",
+                    "nationality": [
+                        "SG"
+                    ],
+                    "addressess": [
+                        {
+                            "rownum": 1,
+                            "addressType": {
+                                "label": "Home",
+                                "value": "HOME"
+                            },
+                            "isStructured": "Yes",
+                            "countryCode": "SG",
+                            "addressLine1": "123 Street 1",
+                            "addressLine2": "Apt 456",
+                            "addressLine3": "",
+                            "addressLine4": "",
+                            "addressLine5": ""
+                        }
+                    ],
+                    "telephoneNumbers": [
+                        {
+                            "rownum": 1,
+                            "telephoneType": {
+                                "label": "Mobile",
+                                "value": "MOBILE"
+                            },
+                            "countryCode": "+65",
+                            "areaCode": "9",
+                            "number": "12345178"
+                        }
+                    ]
+                }
+            ],
+            "accounts": [
+                {
+                    "entity": "John Doe 1",
+                    "accountNumber": "ACC001",
+                    "accountTypeUI": "Personal",
+                    "accountType": {
+                        "label": "Savings",
+                        "value": "SAVINGS"
+                    },
+                    "accountOpenDate": "2010-05-01",
+                    "accountStatusUI": "Active",
+                    "accountStatus": {
+                        "label": "Active",
+                        "value": "ACTIVE"
+                    }
+                }
+            ],
+            "transaction": [
+                {
+                    "transactionReferenceId": "TX001",
+                    "transactionDate": "2024-01-01",
+                    "originatorName": "John Doe 1",
+                    "originatingAccountNo": "ACC001",
+                    "originatingBankCode": {
+                        "label": "Bank 1A",
+                        "value": "BANK001A"
+                    },
+                    "amount": "10000",
+                    "currencyCode": {
+                        "label": "SGD",
+                        "value": "SGD"
+                    },
+                    "sgdEquivalentAmount": "10000",
+                    "beneficiaryName": "Jane Smith 1",
+                    "beneficiaryAccountInternalId": "BEN001",
+                    "beneficiaryAccountNo": "ACC001B",
+                    "beneficiaryBankCode": {
+                        "label": "Bank 1B",
+                        "value": "BANK001B"
+                    },
+                    "recordType": "Transfer"
+                }
+            ]
+        },
+        {
+            "cosmicId": "COSMIC002",
+            "parentCaseId": "CASE002",
+            "businessUnit": "Business Unit 2",
+            "businessUnitLabel": "Label 2",
+            "focusIdentifier": "FI002",
+            "focusName": "Focus Name 2",
+            "createdBy": "User002",
+            "summary": [
+                {
+                    "sharingCategory": "Internal",
+                    "riskType": [
+                        {
+                            "label": "Fraud",
+                            "value": "FRD002"
+                        }
+                    ],
+                    "hasExistingTicket": "Yes",
+                    "existingTicketNumber": "TICKET002",
+                    "internalReferenceNumber": "REF002",
+                    "existingTicketReason": "Suspicious Activity",
+                    "ticketReasonOthers": "None",
+                    "redFlags": [
+                        {
+                            "redFlagsCode": "RF002",
+                            "redFlagType": "Suspicion",
+                            "generic": "Yes",
+                            "redFlag": "High Risk Transaction"
+                        }
+                    ],
+                    "sendingBank": {
+                        "label": "Bank 2A",
+                        "value": "BANK002A"
+                    },
+                    "receivingBank": {
+                        "label": "Bank 2B",
+                        "value": "BANK002B"
+                    },
+                    "summaryDescription": "Suspicious transfer involving Bank 2A and Bank 2B",
+                    "rfi": {
+                        "Questions": [
+                            {
+                                "questionText": "Why was the transaction flagged?",
+                                "questionCode": "Q002",
+                                "order": 1
+                            }
+                        ]
+                    }
+                }
+            ],
+            "entityInformation": [
+                {
+                    "rownum": 2,
+                    "category": "Individual",
+                    "includedInAlert": "Yes",
+                    "alertJustification": "High risk flagged",
+                    "countryOfIncorporation": "SG",
+                    "countryOfIncorporationLabel": "Singapore",
+                    "corporateRegistryNumber": "CR002",
+                    "type": "Individual",
+                    "name": "John Doe 2",
+                    "dateofBirthIncorporatedDate": "1980-01-01",
+                    "nationality": [
+                        "SG"
+                    ],
+                    "addressess": [
+                        {
+                            "rownum": 2,
+                            "addressType": {
+                                "label": "Home",
+                                "value": "HOME"
+                            },
+                            "isStructured": "Yes",
+                            "countryCode": "SG",
+                            "addressLine1": "123 Street 2",
+                            "addressLine2": "Apt 456",
+                            "addressLine3": "",
+                            "addressLine4": "",
+                            "addressLine5": ""
+                        }
+                    ],
+                    "telephoneNumbers": [
+                        {
+                            "rownum": 2,
+                            "telephoneType": {
+                                "label": "Mobile",
+                                "value": "MOBILE"
+                            },
+                            "countryCode": "+65",
+                            "areaCode": "9",
+                            "number": "12345278"
+                        }
+                    ]
+                }
+            ],
+            "accounts": [
+                {
+                    "entity": "John Doe 2",
+                    "accountNumber": "ACC002",
+                    "accountTypeUI": "Personal",
+                    "accountType": {
+                        "label": "Savings",
+                        "value": "SAVINGS"
+                    },
+                    "accountOpenDate": "2010-05-01",
+                    "accountStatusUI": "Active",
+                    "accountStatus": {
+                        "label": "Active",
+                        "value": "ACTIVE"
+                    }
+                }
+            ],
+            "transaction": [
+                {
+                    "transactionReferenceId": "TX002",
+                    "transactionDate": "2024-01-01",
+                    "originatorName": "John Doe 2",
+                    "originatingAccountNo": "ACC002",
+                    "originatingBankCode": {
+                        "label": "Bank 2A",
+                        "value": "BANK002A"
+                    },
+                    "amount": "10000",
+                    "currencyCode": {
+                        "label": "SGD",
+                        "value": "SGD"
+                    },
+                    "sgdEquivalentAmount": "10000",
+                    "beneficiaryName": "Jane Smith 2",
+                    "beneficiaryAccountInternalId": "BEN002",
+                    "beneficiaryAccountNo": "ACC002B",
+                    "beneficiaryBankCode": {
+                        "label": "Bank 2B",
+                        "value": "BANK002B"
+                    },
+                    "recordType": "Transfer"
+                }
+            ]
+        },
+        {
+            "cosmicId": "COSMIC003",
+            "parentCaseId": "CASE003",
+            "businessUnit": "Business Unit 3",
+            "businessUnitLabel": "Label 3",
+            "focusIdentifier": "FI003",
+            "focusName": "Focus Name 3",
+            "createdBy": "User003",
+            "summary": [
+                {
+                    "sharingCategory": "Internal",
+                    "riskType": [
+                        {
+                            "label": "Fraud",
+                            "value": "FRD003"
+                        }
+                    ],
+                    "hasExistingTicket": "Yes",
+                    "existingTicketNumber": "TICKET003",
+                    "internalReferenceNumber": "REF003",
+                    "existingTicketReason": "Suspicious Activity",
+                    "ticketReasonOthers": "None",
+                    "redFlags": [
+                        {
+                            "redFlagsCode": "RF003",
+                            "redFlagType": "Suspicion",
+                            "generic": "Yes",
+                            "redFlag": "High Risk Transaction"
+                        }
+                    ],
+                    "sendingBank": {
+                        "label": "Bank 3A",
+                        "value": "BANK003A"
+                    },
+                    "receivingBank": {
+                        "label": "Bank 3B",
+                        "value": "BANK003B"
+                    },
+                    "summaryDescription": "Suspicious transfer involving Bank 3A and Bank 3B",
+                    "rfi": {
+                        "Questions": [
+                            {
+                                "questionText": "Why was the transaction flagged?",
+                                "questionCode": "Q003",
+                                "order": 1
+                            }
+                        ]
+                    }
+                }
+            ],
+            "entityInformation": [
+                {
+                    "rownum": 3,
+                    "category": "Individual",
+                    "includedInAlert": "Yes",
+                    "alertJustification": "High risk flagged",
+                    "countryOfIncorporation": "SG",
+                    "countryOfIncorporationLabel": "Singapore",
+                    "corporateRegistryNumber": "CR003",
+                    "type": "Individual",
+                    "name": "John Doe 3",
+                    "dateofBirthIncorporatedDate": "1980-01-01",
+                    "nationality": [
+                        "SG"
+                    ],
+                    "addressess": [
+                        {
+                            "rownum": 3,
+                            "addressType": {
+                                "label": "Home",
+                                "value": "HOME"
+                            },
+                            "isStructured": "Yes",
+                            "countryCode": "SG",
+                            "addressLine1": "123 Street 3",
+                            "addressLine2": "Apt 456",
+                            "addressLine3": "",
+                            "addressLine4": "",
+                            "addressLine5": ""
+                        }
+                    ],
+                    "telephoneNumbers": [
+                        {
+                            "rownum": 3,
+                            "telephoneType": {
+                                "label": "Mobile",
+                                "value": "MOBILE"
+                            },
+                            "countryCode": "+65",
+                            "areaCode": "9",
+                            "number": "12345378"
+                        }
+                    ]
+                }
+            ],
+            "accounts": [
+                {
+                    "entity": "John Doe 3",
+                    "accountNumber": "ACC003",
+                    "accountTypeUI": "Personal",
+                    "accountType": {
+                        "label": "Savings",
+                        "value": "SAVINGS"
+                    },
+                    "accountOpenDate": "2010-05-01",
+                    "accountStatusUI": "Active",
+                    "accountStatus": {
+                        "label": "Active",
+                        "value": "ACTIVE"
+                    }
+                }
+            ],
+            "transaction": [
+                {
+                    "transactionReferenceId": "TX003",
+                    "transactionDate": "2024-01-01",
+                    "originatorName": "John Doe 3",
+                    "originatingAccountNo": "ACC003",
+                    "originatingBankCode": {
+                        "label": "Bank 3A",
+                        "value": "BANK003A"
+                    },
+                    "amount": "10000",
+                    "currencyCode": {
+                        "label": "SGD",
+                        "value": "SGD"
+                    },
+                    "sgdEquivalentAmount": "10000",
+                    "beneficiaryName": "Jane Smith 3",
+                    "beneficiaryAccountInternalId": "BEN003",
+                    "beneficiaryAccountNo": "ACC003B",
+                    "beneficiaryBankCode": {
+                        "label": "Bank 3B",
+                        "value": "BANK003B"
+                    },
+                    "recordType": "Transfer"
+                }
+            ]
+        },
+        {
+            "cosmicId": "COSMIC004",
+            "parentCaseId": "CASE004",
+            "businessUnit": "Business Unit 4",
+            "businessUnitLabel": "Label 4",
+            "focusIdentifier": "FI004",
+            "focusName": "Focus Name 4",
+            "createdBy": "User004",
+            "summary": [
+                {
+                    "sharingCategory": "Internal",
+                    "riskType": [
+                        {
+                            "label": "Fraud",
+                            "value": "FRD004"
+                        }
+                    ],
+                    "hasExistingTicket": "Yes",
+                    "existingTicketNumber": "TICKET004",
+                    "internalReferenceNumber": "REF004",
+                    "existingTicketReason": "Suspicious Activity",
+                    "ticketReasonOthers": "None",
+                    "redFlags": [
+                        {
+                            "redFlagsCode": "RF004",
+                            "redFlagType": "Suspicion",
+                            "generic": "Yes",
+                            "redFlag": "High Risk Transaction"
+                        }
+                    ],
+                    "sendingBank": {
+                        "label": "Bank 4A",
+                        "value": "BANK004A"
+                    },
+                    "receivingBank": {
+                        "label": "Bank 4B",
+                        "value": "BANK004B"
+                    },
+                    "summaryDescription": "Suspicious transfer involving Bank 4A and Bank 4B",
+                    "rfi": {
+                        "Questions": [
+                            {
+                                "questionText": "Why was the transaction flagged?",
+                                "questionCode": "Q004",
+                                "order": 1
+                            }
+                        ]
+                    }
+                }
+            ],
+            "entityInformation": [
+                {
+                    "rownum": 4,
+                    "category": "Individual",
+                    "includedInAlert": "Yes",
+                    "alertJustification": "High risk flagged",
+                    "countryOfIncorporation": "SG",
+                    "countryOfIncorporationLabel": "Singapore",
+                    "corporateRegistryNumber": "CR004",
+                    "type": "Individual",
+                    "name": "John Doe 4",
+                    "dateofBirthIncorporatedDate": "1980-01-01",
+                    "nationality": [
+                        "SG"
+                    ],
+                    "addressess": [
+                        {
+                            "rownum": 4,
+                            "addressType": {
+                                "label": "Home",
+                                "value": "HOME"
+                            },
+                            "isStructured": "Yes",
+                            "countryCode": "SG",
+                            "addressLine1": "123 Street 4",
+                            "addressLine2": "Apt 456",
+                            "addressLine3": "",
+                            "addressLine4": "",
+                            "addressLine5": ""
+                        }
+                    ],
+                    "telephoneNumbers": [
+                        {
+                            "rownum": 4,
+                            "telephoneType": {
+                                "label": "Mobile",
+                                "value": "MOBILE"
+                            },
+                            "countryCode": "+65",
+                            "areaCode": "9",
+                            "number": "12345478"
+                        }
+                    ]
+                }
+            ],
+            "accounts": [
+                {
+                    "entity": "John Doe 4",
+                    "accountNumber": "ACC004",
+                    "accountTypeUI": "Personal",
+                    "accountType": {
+                        "label": "Savings",
+                        "value": "SAVINGS"
+                    },
+                    "accountOpenDate": "2010-05-01",
+                    "accountStatusUI": "Active",
+                    "accountStatus": {
+                        "label": "Active",
+                        "value": "ACTIVE"
+                    }
+                }
+            ],
+            "transaction": [
+                {
+                    "transactionReferenceId": "TX004",
+                    "transactionDate": "2024-01-01",
+                    "originatorName": "John Doe 4",
+                    "originatingAccountNo": "ACC004",
+                    "originatingBankCode": {
+                        "label": "Bank 4A",
+                        "value": "BANK004A"
+                    },
+                    "amount": "10000",
+                    "currencyCode": {
+                        "label": "SGD",
+                        "value": "SGD"
+                    },
+                    "sgdEquivalentAmount": "10000",
+                    "beneficiaryName": "Jane Smith 4",
+                    "beneficiaryAccountInternalId": "BEN004",
+                    "beneficiaryAccountNo": "ACC004B",
+                    "beneficiaryBankCode": {
+                        "label": "Bank 4B",
+                        "value": "BANK004B"
+                    },
+                    "recordType": "Transfer"
+                }
+            ]
+        },
+        {
+            "cosmicId": "COSMIC005",
+            "parentCaseId": "CASE005",
+            "businessUnit": "Business Unit 5",
+            "businessUnitLabel": "Label 5",
+            "focusIdentifier": "FI005",
+            "focusName": "Focus Name 5",
+            "createdBy": "User005",
+            "summary": [
+                {
+                    "sharingCategory": "Internal",
+                    "riskType": [
+                        {
+                            "label": "Fraud",
+                            "value": "FRD005"
+                        }
+                    ],
+                    "hasExistingTicket": "Yes",
+                    "existingTicketNumber": "TICKET005",
+                    "internalReferenceNumber": "REF005",
+                    "existingTicketReason": "Suspicious Activity",
+                    "ticketReasonOthers": "None",
+                    "redFlags": [
+                        {
+                            "redFlagsCode": "RF005",
+                            "redFlagType": "Suspicion",
+                            "generic": "Yes",
+                            "redFlag": "High Risk Transaction"
+                        }
+                    ],
+                    "sendingBank": {
+                        "label": "Bank 5A",
+                        "value": "BANK005A"
+                    },
+                    "receivingBank": {
+                        "label": "Bank 5B",
+                        "value": "BANK005B"
+                    },
+                    "summaryDescription": "Suspicious transfer involving Bank 5A and Bank 5B",
+                    "rfi": {
+                        "Questions": [
+                            {
+                                "questionText": "Why was the transaction flagged?",
+                                "questionCode": "Q005",
+                                "order": 1
+                            }
+                        ]
+                    }
+                }
+            ],
+            "entityInformation": [
+                {
+                    "rownum": 5,
+                    "category": "Individual",
+                    "includedInAlert": "Yes",
+                    "alertJustification": "High risk flagged",
+                    "countryOfIncorporation": "SG",
+                    "countryOfIncorporationLabel": "Singapore",
+                    "corporateRegistryNumber": "CR005",
+                    "type": "Individual",
+                    "name": "John Doe 5",
+                    "dateofBirthIncorporatedDate": "1980-01-01",
+                    "nationality": [
+                        "SG"
+                    ],
+                    "addressess": [
+                        {
+                            "rownum": 5,
+                            "addressType": {
+                                "label": "Home",
+                                "value": "HOME"
+                            },
+                            "isStructured": "Yes",
+                            "countryCode": "SG",
+                            "addressLine1": "123 Street 5",
+                            "addressLine2": "Apt 456",
+                            "addressLine3": "",
+                            "addressLine4": "",
+                            "addressLine5": ""
+                        }
+                    ],
+                    "telephoneNumbers": [
+                        {
+                            "rownum": 5,
+                            "telephoneType": {
+                                "label": "Mobile",
+                                "value": "MOBILE"
+                            },
+                            "countryCode": "+65",
+                            "areaCode": "9",
+                            "number": "12345578"
+                        }
+                    ]
+                }
+            ],
+            "accounts": [
+                {
+                    "entity": "John Doe 5",
+                    "accountNumber": "ACC005",
+                    "accountTypeUI": "Personal",
+                    "accountType": {
+                        "label": "Savings",
+                        "value": "SAVINGS"
+                    },
+                    "accountOpenDate": "2010-05-01",
+                    "accountStatusUI": "Active",
+                    "accountStatus": {
+                        "label": "Active",
+                        "value": "ACTIVE"
+                    }
+                }
+            ],
+            "transaction": [
+                {
+                    "transactionReferenceId": "TX005",
+                    "transactionDate": "2024-01-01",
+                    "originatorName": "John Doe 5",
+                    "originatingAccountNo": "ACC005",
+                    "originatingBankCode": {
+                        "label": "Bank 5A",
+                        "value": "BANK005A"
+                    },
+                    "amount": "10000",
+                    "currencyCode": {
+                        "label": "SGD",
+                        "value": "SGD"
+                    },
+                    "sgdEquivalentAmount": "10000",
+                    "beneficiaryName": "Jane Smith 5",
+                    "beneficiaryAccountInternalId": "BEN005",
+                    "beneficiaryAccountNo": "ACC005B",
+                    "beneficiaryBankCode": {
+                        "label": "Bank 5B",
+                        "value": "BANK005B"
+                    },
+                    "recordType": "Transfer"
+                }
+            ]
+        },
+        {
+            "cosmicId": "COSMIC006",
+            "parentCaseId": "CASE006",
+            "businessUnit": "Business Unit 6",
+            "businessUnitLabel": "Label 6",
+            "focusIdentifier": "FI006",
+            "focusName": "Focus Name 6",
+            "createdBy": "User006",
+            "summary": [
+                {
+                    "sharingCategory": "Internal",
+                    "riskType": [
+                        {
+                            "label": "Fraud",
+                            "value": "FRD006"
+                        }
+                    ],
+                    "hasExistingTicket": "Yes",
+                    "existingTicketNumber": "TICKET006",
+                    "internalReferenceNumber": "REF006",
+                    "existingTicketReason": "Suspicious Activity",
+                    "ticketReasonOthers": "None",
+                    "redFlags": [
+                        {
+                            "redFlagsCode": "RF006",
+                            "redFlagType": "Suspicion",
+                            "generic": "Yes",
+                            "redFlag": "High Risk Transaction"
+                        }
+                    ],
+                    "sendingBank": {
+                        "label": "Bank 6A",
+                        "value": "BANK006A"
+                    },
+                    "receivingBank": {
+                        "label": "Bank 6B",
+                        "value": "BANK006B"
+                    },
+                    "summaryDescription": "Suspicious transfer involving Bank 6A and Bank 6B",
+                    "rfi": {
+                        "Questions": [
+                            {
+                                "questionText": "Why was the transaction flagged?",
+                                "questionCode": "Q006",
+                                "order": 1
+                            }
+                        ]
+                    }
+                }
+            ],
+            "entityInformation": [
+                {
+                    "rownum": 6,
+                    "category": "Individual",
+                    "includedInAlert": "Yes",
+                    "alertJustification": "High risk flagged",
+                    "countryOfIncorporation": "SG",
+                    "countryOfIncorporationLabel": "Singapore",
+                    "corporateRegistryNumber": "CR006",
+                    "type": "Individual",
+                    "name": "John Doe 6",
+                    "dateofBirthIncorporatedDate": "1980-01-01",
+                    "nationality": [
+                        "SG"
+                    ],
+                    "addressess": [
+                        {
+                            "rownum": 6,
+                            "addressType": {
+                                "label": "Home",
+                                "value": "HOME"
+                            },
+                            "isStructured": "Yes",
+                            "countryCode": "SG",
+                            "addressLine1": "123 Street 6",
+                            "addressLine2": "Apt 456",
+                            "addressLine3": "",
+                            "addressLine4": "",
+                            "addressLine5": ""
+                        }
+                    ],
+                    "telephoneNumbers": [
+                        {
+                            "rownum": 6,
+                            "telephoneType": {
+                                "label": "Mobile",
+                                "value": "MOBILE"
+                            },
+                            "countryCode": "+65",
+                            "areaCode": "9",
+                            "number": "12345678"
+                        }
+                    ]
+                }
+            ],
+            "accounts": [
+                {
+                    "entity": "John Doe 6",
+                    "accountNumber": "ACC006",
+                    "accountTypeUI": "Personal",
+                    "accountType": {
+                        "label": "Savings",
+                        "value": "SAVINGS"
+                    },
+                    "accountOpenDate": "2010-05-01",
+                    "accountStatusUI": "Active",
+                    "accountStatus": {
+                        "label": "Active",
+                        "value": "ACTIVE"
+                    }
+                }
+            ],
+            "transaction": [
+                {
+                    "transactionReferenceId": "TX006",
+                    "transactionDate": "2024-01-01",
+                    "originatorName": "John Doe 6",
+                    "originatingAccountNo": "ACC006",
+                    "originatingBankCode": {
+                        "label": "Bank 6A",
+                        "value": "BANK006A"
+                    },
+                    "amount": "10000",
+                    "currencyCode": {
+                        "label": "SGD",
+                        "value": "SGD"
+                    },
+                    "sgdEquivalentAmount": "10000",
+                    "beneficiaryName": "Jane Smith 6",
+                    "beneficiaryAccountInternalId": "BEN006",
+                    "beneficiaryAccountNo": "ACC006B",
+                    "beneficiaryBankCode": {
+                        "label": "Bank 6B",
+                        "value": "BANK006B"
+                    },
+                    "recordType": "Transfer"
+                }
+            ]
+        },
+        {
+            "cosmicId": "COSMIC007",
+            "parentCaseId": "CASE007",
+            "businessUnit": "Business Unit 7",
+            "businessUnitLabel": "Label 7",
+            "focusIdentifier": "FI007",
+            "focusName": "Focus Name 7",
+            "createdBy": "User007",
+            "summary": [
+                {
+                    "sharingCategory": "Internal",
+                    "riskType": [
+                        {
+                            "label": "Fraud",
+                            "value": "FRD007"
+                        }
+                    ],
+                    "hasExistingTicket": "Yes",
+                    "existingTicketNumber": "TICKET007",
+                    "internalReferenceNumber": "REF007",
+                    "existingTicketReason": "Suspicious Activity",
+                    "ticketReasonOthers": "None",
+                    "redFlags": [
+                        {
+                            "redFlagsCode": "RF007",
+                            "redFlagType": "Suspicion",
+                            "generic": "Yes",
+                            "redFlag": "High Risk Transaction"
+                        }
+                    ],
+                    "sendingBank": {
+                        "label": "Bank 7A",
+                        "value": "BANK007A"
+                    },
+                    "receivingBank": {
+                        "label": "Bank 7B",
+                        "value": "BANK007B"
+                    },
+                    "summaryDescription": "Suspicious transfer involving Bank 7A and Bank 7B",
+                    "rfi": {
+                        "Questions": [
+                            {
+                                "questionText": "Why was the transaction flagged?",
+                                "questionCode": "Q007",
+                                "order": 1
+                            }
+                        ]
+                    }
+                }
+            ],
+            "entityInformation": [
+                {
+                    "rownum": 7,
+                    "category": "Individual",
+                    "includedInAlert": "Yes",
+                    "alertJustification": "High risk flagged",
+                    "countryOfIncorporation": "SG",
+                    "countryOfIncorporationLabel": "Singapore",
+                    "corporateRegistryNumber": "CR007",
+                    "type": "Individual",
+                    "name": "John Doe 7",
+                    "dateofBirthIncorporatedDate": "1980-01-01",
+                    "nationality": [
+                        "SG"
+                    ],
+                    "addressess": [
+                        {
+                            "rownum": 7,
+                            "addressType": {
+                                "label": "Home",
+                                "value": "HOME"
+                            },
+                            "isStructured": "Yes",
+                            "countryCode": "SG",
+                            "addressLine1": "123 Street 7",
+                            "addressLine2": "Apt 456",
+                            "addressLine3": "",
+                            "addressLine4": "",
+                            "addressLine5": ""
+                        }
+                    ],
+                    "telephoneNumbers": [
+                        {
+                            "rownum": 7,
+                            "telephoneType": {
+                                "label": "Mobile",
+                                "value": "MOBILE"
+                            },
+                            "countryCode": "+65",
+                            "areaCode": "9",
+                            "number": "12345778"
+                        }
+                    ]
+                }
+            ],
+            "accounts": [
+                {
+                    "entity": "John Doe 7",
+                    "accountNumber": "ACC007",
+                    "accountTypeUI": "Personal",
+                    "accountType": {
+                        "label": "Savings",
+                        "value": "SAVINGS"
+                    },
+                    "accountOpenDate": "2010-05-01",
+                    "accountStatusUI": "Active",
+                    "accountStatus": {
+                        "label": "Active",
+                        "value": "ACTIVE"
+                    }
+                }
+            ],
+            "transaction": [
+                {
+                    "transactionReferenceId": "TX007",
+                    "transactionDate": "2024-01-01",
+                    "originatorName": "John Doe 7",
+                    "originatingAccountNo": "ACC007",
+                    "originatingBankCode": {
+                        "label": "Bank 7A",
+                        "value": "BANK007A"
+                    },
+                    "amount": "10000",
+                    "currencyCode": {
+                        "label": "SGD",
+                        "value": "SGD"
+                    },
+                    "sgdEquivalentAmount": "10000",
+                    "beneficiaryName": "Jane Smith 7",
+                    "beneficiaryAccountInternalId": "BEN007",
+                    "beneficiaryAccountNo": "ACC007B",
+                    "beneficiaryBankCode": {
+                        "label": "Bank 7B",
+                        "value": "BANK007B"
+                    },
+                    "recordType": "Transfer"
+                }
+            ]
+        },
+        {
+            "cosmicId": "COSMIC008",
+            "parentCaseId": "CASE008",
+            "businessUnit": "Business Unit 8",
+            "businessUnitLabel": "Label 8",
+            "focusIdentifier": "FI008",
+            "focusName": "Focus Name 8",
+            "createdBy": "User008",
+            "summary": [
+                {
+                    "sharingCategory": "Internal",
+                    "riskType": [
+                        {
+                            "label": "Fraud",
+                            "value": "FRD008"
+                        }
+                    ],
+                    "hasExistingTicket": "Yes",
+                    "existingTicketNumber": "TICKET008",
+                    "internalReferenceNumber": "REF008",
+                    "existingTicketReason": "Suspicious Activity",
+                    "ticketReasonOthers": "None",
+                    "redFlags": [
+                        {
+                            "redFlagsCode": "RF008",
+                            "redFlagType": "Suspicion",
+                            "generic": "Yes",
+                            "redFlag": "High Risk Transaction"
+                        }
+                    ],
+                    "sendingBank": {
+                        "label": "Bank 8A",
+                        "value": "BANK008A"
+                    },
+                    "receivingBank": {
+                        "label": "Bank 8B",
+                        "value": "BANK008B"
+                    },
+                    "summaryDescription": "Suspicious transfer involving Bank 8A and Bank 8B",
+                    "rfi": {
+                        "Questions": [
+                            {
+                                "questionText": "Why was the transaction flagged?",
+                                "questionCode": "Q008",
+                                "order": 1
+                            }
+                        ]
+                    }
+                }
+            ],
+            "entityInformation": [
+                {
+                    "rownum": 8,
+                    "category": "Individual",
+                    "includedInAlert": "Yes",
+                    "alertJustification": "High risk flagged",
+                    "countryOfIncorporation": "SG",
+                    "countryOfIncorporationLabel": "Singapore",
+                    "corporateRegistryNumber": "CR008",
+                    "type": "Individual",
+                    "name": "John Doe 8",
+                    "dateofBirthIncorporatedDate": "1980-01-01",
+                    "nationality": [
+                        "SG"
+                    ],
+                    "addressess": [
+                        {
+                            "rownum": 8,
+                            "addressType": {
+                                "label": "Home",
+                                "value": "HOME"
+                            },
+                            "isStructured": "Yes",
+                            "countryCode": "SG",
+                            "addressLine1": "123 Street 8",
+                            "addressLine2": "Apt 456",
+                            "addressLine3": "",
+                            "addressLine4": "",
+                            "addressLine5": ""
+                        }
+                    ],
+                    "telephoneNumbers": [
+                        {
+                            "rownum": 8,
+                            "telephoneType": {
+                                "label": "Mobile",
+                                "value": "MOBILE"
+                            },
+                            "countryCode": "+65",
+                            "areaCode": "9",
+                            "number": "12345878"
+                        }
+                    ]
+                }
+            ],
+            "accounts": [
+                {
+                    "entity": "John Doe 8",
+                    "accountNumber": "ACC008",
+                    "accountTypeUI": "Personal",
+                    "accountType": {
+                        "label": "Savings",
+                        "value": "SAVINGS"
+                    },
+                    "accountOpenDate": "2010-05-01",
+                    "accountStatusUI": "Active",
+                    "accountStatus": {
+                        "label": "Active",
+                        "value": "ACTIVE"
+                    }
+                }
+            ],
+            "transaction": [
+                {
+                    "transactionReferenceId": "TX008",
+                    "transactionDate": "2024-01-01",
+                    "originatorName": "John Doe 8",
+                    "originatingAccountNo": "ACC008",
+                    "originatingBankCode": {
+                        "label": "Bank 8A",
+                        "value": "BANK008A"
+                    },
+                    "amount": "10000",
+                    "currencyCode": {
+                        "label": "SGD",
+                        "value": "SGD"
+                    },
+                    "sgdEquivalentAmount": "10000",
+                    "beneficiaryName": "Jane Smith 8",
+                    "beneficiaryAccountInternalId": "BEN008",
+                    "beneficiaryAccountNo": "ACC008B",
+                    "beneficiaryBankCode": {
+                        "label": "Bank 8B",
+                        "value": "BANK008B"
+                    },
+                    "recordType": "Transfer"
+                }
+            ]
+        },
+        {
+            "cosmicId": "COSMIC009",
+            "parentCaseId": "CASE009",
+            "businessUnit": "Business Unit 9",
+            "businessUnitLabel": "Label 9",
+            "focusIdentifier": "FI009",
+            "focusName": "Focus Name 9",
+            "createdBy": "User009",
+            "summary": [
+                {
+                    "sharingCategory": "Internal",
+                    "riskType": [
+                        {
+                            "label": "Fraud",
+                            "value": "FRD009"
+                        }
+                    ],
+                    "hasExistingTicket": "Yes",
+                    "existingTicketNumber": "TICKET009",
+                    "internalReferenceNumber": "REF009",
+                    "existingTicketReason": "Suspicious Activity",
+                    "ticketReasonOthers": "None",
+                    "redFlags": [
+                        {
+                            "redFlagsCode": "RF009",
+                            "redFlagType": "Suspicion",
+                            "generic": "Yes",
+                            "redFlag": "High Risk Transaction"
+                        }
+                    ],
+                    "sendingBank": {
+                        "label": "Bank 9A",
+                        "value": "BANK009A"
+                    },
+                    "receivingBank": {
+                        "label": "Bank 9B",
+                        "value": "BANK009B"
+                    },
+                    "summaryDescription": "Suspicious transfer involving Bank 9A and Bank 9B",
+                    "rfi": {
+                        "Questions": [
+                            {
+                                "questionText": "Why was the transaction flagged?",
+                                "questionCode": "Q009",
+                                "order": 1
+                            }
+                        ]
+                    }
+                }
+            ],
+            "entityInformation": [
+                {
+                    "rownum": 9,
+                    "category": "Individual",
+                    "includedInAlert": "Yes",
+                    "alertJustification": "High risk flagged",
+                    "countryOfIncorporation": "SG",
+                    "countryOfIncorporationLabel": "Singapore",
+                    "corporateRegistryNumber": "CR009",
+                    "type": "Individual",
+                    "name": "John Doe 9",
+                    "dateofBirthIncorporatedDate": "1980-01-01",
+                    "nationality": [
+                        "SG"
+                    ],
+                    "addressess": [
+                        {
+                            "rownum": 9,
+                            "addressType": {
+                                "label": "Home",
+                                "value": "HOME"
+                            },
+                            "isStructured": "Yes",
+                            "countryCode": "SG",
+                            "addressLine1": "123 Street 9",
+                            "addressLine2": "Apt 456",
+                            "addressLine3": "",
+                            "addressLine4": "",
+                            "addressLine5": ""
+                        }
+                    ],
+                    "telephoneNumbers": [
+                        {
+                            "rownum": 9,
+                            "telephoneType": {
+                                "label": "Mobile",
+                                "value": "MOBILE"
+                            },
+                            "countryCode": "+65",
+                            "areaCode": "9",
+                            "number": "12345978"
+                        }
+                    ]
+                }
+            ],
+            "accounts": [
+                {
+                    "entity": "John Doe 9",
+                    "accountNumber": "ACC009",
+                    "accountTypeUI": "Personal",
+                    "accountType": {
+                        "label": "Savings",
+                        "value": "SAVINGS"
+                    },
+                    "accountOpenDate": "2010-05-01",
+                    "accountStatusUI": "Active",
+                    "accountStatus": {
+                        "label": "Active",
+                        "value": "ACTIVE"
+                    }
+                }
+            ],
+            "transaction": [
+                {
+                    "transactionReferenceId": "TX009",
+                    "transactionDate": "2024-01-01",
+                    "originatorName": "John Doe 9",
+                    "originatingAccountNo": "ACC009",
+                    "originatingBankCode": {
+                        "label": "Bank 9A",
+                        "value": "BANK009A"
+                    },
+                    "amount": "10000",
+                    "currencyCode": {
+                        "label": "SGD",
+                        "value": "SGD"
+                    },
+                    "sgdEquivalentAmount": "10000",
+                    "beneficiaryName": "Jane Smith 9",
+                    "beneficiaryAccountInternalId": "BEN009",
+                    "beneficiaryAccountNo": "ACC009B",
+                    "beneficiaryBankCode": {
+                        "label": "Bank 9B",
+                        "value": "BANK009B"
+                    },
+                    "recordType": "Transfer"
+                }
+            ]
+        },
+        {
+            "cosmicId": "COSMIC0010",
+            "parentCaseId": "CASE0010",
+            "businessUnit": "Business Unit 10",
+            "businessUnitLabel": "Label 10",
+            "focusIdentifier": "FI0010",
+            "focusName": "Focus Name 10",
+            "createdBy": "User0010",
+            "summary": [
+                {
+                    "sharingCategory": "Internal",
+                    "riskType": [
+                        {
+                            "label": "Fraud",
+                            "value": "FRD0010"
+                        }
+                    ],
+                    "hasExistingTicket": "Yes",
+                    "existingTicketNumber": "TICKET0010",
+                    "internalReferenceNumber": "REF0010",
+                    "existingTicketReason": "Suspicious Activity",
+                    "ticketReasonOthers": "None",
+                    "redFlags": [
+                        {
+                            "redFlagsCode": "RF0010",
+                            "redFlagType": "Suspicion",
+                            "generic": "Yes",
+                            "redFlag": "High Risk Transaction"
+                        }
+                    ],
+                    "sendingBank": {
+                        "label": "Bank 10A",
+                        "value": "BANK0010A"
+                    },
+                    "receivingBank": {
+                        "label": "Bank 10B",
+                        "value": "BANK0010B"
+                    },
+                    "summaryDescription": "Suspicious transfer involving Bank 10A and Bank 10B",
+                    "rfi": {
+                        "Questions": [
+                            {
+                                "questionText": "Why was the transaction flagged?",
+                                "questionCode": "Q0010",
+                                "order": 1
+                            }
+                        ]
+                    }
+                }
+            ],
+            "entityInformation": [
+                {
+                    "rownum": 10,
+                    "category": "Individual",
+                    "includedInAlert": "Yes",
+                    "alertJustification": "High risk flagged",
+                    "countryOfIncorporation": "SG",
+                    "countryOfIncorporationLabel": "Singapore",
+                    "corporateRegistryNumber": "CR0010",
+                    "type": "Individual",
+                    "name": "John Doe 10",
+                    "dateofBirthIncorporatedDate": "1980-01-01",
+                    "nationality": [
+                        "SG"
+                    ],
+                    "addressess": [
+                        {
+                            "rownum": 10,
+                            "addressType": {
+                                "label": "Home",
+                                "value": "HOME"
+                            },
+                            "isStructured": "Yes",
+                            "countryCode": "SG",
+                            "addressLine1": "123 Street 10",
+                            "addressLine2": "Apt 456",
+                            "addressLine3": "",
+                            "addressLine4": "",
+                            "addressLine5": ""
+                        }
+                    ],
+                    "telephoneNumbers": [
+                        {
+                            "rownum": 10,
+                            "telephoneType": {
+                                "label": "Mobile",
+                                "value": "MOBILE"
+                            },
+                            "countryCode": "+65",
+                            "areaCode": "9",
+                            "number": "123451078"
+                        }
+                    ]
+                }
+            ],
+            "accounts": [
+                {
+                    "entity": "John Doe 10",
+                    "accountNumber": "ACC0010",
+                    "accountTypeUI": "Personal",
+                    "accountType": {
+                        "label": "Savings",
+                        "value": "SAVINGS"
+                    },
+                    "accountOpenDate": "2010-05-01",
+                    "accountStatusUI": "Active",
+                    "accountStatus": {
+                        "label": "Active",
+                        "value": "ACTIVE"
+                    }
+                }
+            ],
+            "transaction": [
+                {
+                    "transactionReferenceId": "TX0010",
+                    "transactionDate": "2024-01-01",
+                    "originatorName": "John Doe 10",
+                    "originatingAccountNo": "ACC0010",
+                    "originatingBankCode": {
+                        "label": "Bank 10A",
+                        "value": "BANK0010A"
+                    },
+                    "amount": "10000",
+                    "currencyCode": {
+                        "label": "SGD",
+                        "value": "SGD"
+                    },
+                    "sgdEquivalentAmount": "10000",
+                    "beneficiaryName": "Jane Smith 10",
+                    "beneficiaryAccountInternalId": "BEN0010",
+                    "beneficiaryAccountNo": "ACC0010B",
+                    "beneficiaryBankCode": {
+                        "label": "Bank 10B",
+                        "value": "BANK0010B"
+                    },
+                    "recordType": "Transfer"
+                }
+            ]
+        }
+    ]
+}

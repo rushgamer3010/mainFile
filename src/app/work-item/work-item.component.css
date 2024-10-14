@@ -1,0 +1,134 @@
+/* General modal styling */
+.modal {
+  display: block;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: white;
+  margin: 5% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-height: 80vh;
+  overflow-y: auto;
+  border-radius: 8px;
+}
+
+/* Box around the sections */
+.box {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+}
+
+/* Work Item Details, Notes, Attachments, Audit History grid layout */
+.work-item-details, .work-item-notes, .work-item-attachments, .work-item-audit {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.detail-box, .note-box, .attachment-box, .audit-box {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+.checkbox-section {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column; /* Stack label and input/button vertically */
+  margin-bottom: 20px; /* Space below input section */
+}
+
+.input-label {
+  font-size: 1.2em; /* Larger font size for label */
+  margin-bottom: 8px; /* Space between label and input */
+}
+
+.input-group {
+  display: flex; /* Align input and button horizontally */
+}
+
+.preview-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Code for creating table for red flag. */
+
+.red-flags-table {
+  width: 100%;
+  border-collapse: collapse; /* Ensure borders are shared between cells */
+  margin-bottom: 20px;
+}
+
+.red-flags-table th, .red-flags-table td {
+  border: 1px solid #000; /* Black border for both header and cells */
+  padding: 10px;
+  text-align: left;
+}
+
+.red-flags-table th {
+  background-color: #f2f2f2; /* Light background for the header */
+}
+
+/* Nationality Beside Each Other */
+
+.detail-box-container {
+  display: flex; /* Enable Flexbox */
+  justify-content: space-between; /* Space between the items */
+  align-items: center; /* Center items vertically */
+  margin-bottom: 10px; /* Space below the container */
+}
+
+.detail-box {
+  flex: 1; /* Allow the boxes to grow and fill the space */
+  margin-right: 10px; /* Add space between the boxes */
+}
+
+.detail-box:last-child {
+  margin-right: 0; /* Remove margin for the last child */
+}
+
+/* CSS code for spacing */
+
+.modal {
+  display: block;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: white;
+  margin: 5% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-height: 80vh; /* Limit height of modal */
+  overflow-y: auto; /* Enable scrolling */
+  border-radius: 8px;
+}
+
+/* Other existing styles */
+
